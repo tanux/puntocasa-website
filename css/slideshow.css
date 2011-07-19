@@ -1,0 +1,22 @@
+#slideshow {
+    height: 600px;
+    left: 19px;
+    overflow-x: hidden;
+    position: absolute;
+    top: 19px;
+    width: 850px;
+    z-index: -3;
+    background-color:white;
+}
+#slideshow IMG {
+    position:absolute;
+    width:425px;
+    height:600px;
+}
+#slideshow IMG.active {
+    z-index:10;
+    opacity:1.0;
+}
+#slideshow IMG.last-active {
+    z-index:9;
+}

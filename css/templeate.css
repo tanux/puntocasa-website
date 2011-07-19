@@ -1,0 +1,33 @@
+body{
+  background-color:#fffff7;
+  background-image:url('../img/bg_parte_superiore.png');
+  background-attachment:fixed;
+  background-repeat:repeat-x;
+  margin-top:0;
+  margin-bottom:0;
+}
+#content_all{
+  /*per centrare con position absolute */
+  position:absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  /********/
+  width:900px;
+  padding-top:10px;
+}
+#contenuto{
+  border:1px solid;
+  width:880px;
+  position:relative;
+  background-color:white;
+  left:-10px;
+  top:15px;
+  padding-top:30px;
+  padding-left:40px;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.4);
+  z-index:-1;
+}
