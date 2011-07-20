@@ -33,7 +33,10 @@ if ($d) {
     #navigation_menu a{
       text-decoration:none;
     }
-    #navigation_menu a:link, a:visited {
+    #navigation_menu a:link{
+      color:white;
+    }
+    #navigation_menu a:visited{
       color:white;
     }
   </style>
