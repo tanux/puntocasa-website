@@ -1,9 +1,9 @@
 #slideshow {
-    height: 600px;
+    height: 603px;
     left: 19px;
     overflow-x: hidden;
     position: absolute;
-    top: 19px;
+    top: 16px;
     width: 850px;
     z-index: -3;
     background-color:white;
@@ -11,7 +11,7 @@
 #slideshow IMG {
     position:absolute;
     width:425px;
-    height:600px;
+    height:603px;
 }
 #slideshow IMG.active {
     z-index:10;
