@@ -20,10 +20,10 @@ body{
 #contenuto{
   width:300px;
   position:absolute;
-  left:545px;
-  top:240px;
+  left:560px;
+  top:300px;
   font-family:TAHOMA;
-  font-size:14pt;
+  font-size:12pt;
   text-align:right;
 }
 #bottom_menubar{
@@ -33,4 +33,7 @@ body{
   width:835px;
   margin-top:5px;
   margin-left:30px
+}
+a:link {
+  color:blue;
 }

@@ -5,7 +5,7 @@
   <title>Home Page | Punto Casa Tendaggi di Umbero Speranza</title>
   <meta name="description" content="Home page del sito Punto Casa Tendaggi di Umberto Speranza" />
 <?php   require_once 'init.php'; ?>
-  <div style="color:#003366; font-family: 'Reenie Beanie', arial, serif; font-size:30pt; position:absolute; top:150px; left:455px;">Home Page</div>
+  <div style="color:#003366; font-family: 'Reenie Beanie', arial, serif; font-size:30pt; position:absolute; top:230px; left:560px;">Home Page</div>
   <div id="contenuto">
     <span>Devi montare tende da sole o da interno?</span> <br />
     <span>Desideri abbellire la tua casa con una tettoia in legno?</span> <br /><br />
