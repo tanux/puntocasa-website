@@ -1,10 +1,10 @@
 #slideshow {
     height: 603px;
-    left: 19px;
+    left: 17px;
     overflow-x: hidden;
     position: absolute;
-    top: 16px;
-    width: 850px;
+    top: 17px;
+    width: 865px;
     z-index: -3;
     background-color:white;
 }
