@@ -2,7 +2,7 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <title>Home Page | Punto Casa Tendaggi di Umberto Speranza</title>
+  <title>Immagini | Punto Casa Tendaggi di Umberto Speranza</title>
   <meta name="description" content="Home page del sito Punto Casa Tendaggi di Umberto Speranza" />
 <?php   require_once 'init.php'; ?>
   <div style="color:#003366; font-family: 'Reenie Beanie', arial, serif; font-size:30pt; position:absolute; top:230px; left:560px;">Home Page</div>
