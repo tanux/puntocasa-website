@@ -32,6 +32,7 @@ if ($d) {
   <style type="text/css">
     #navigation_menu a{
       text-decoration:none;
+      font-style:italic;
     }
     #navigation_menu a:link{
       color:white;
@@ -44,8 +45,8 @@ if ($d) {
 </head>
 <body>
   <div id="content_all">
-    <div id="cornice_up" style="width:900px; height:24px; background-image:url('img/cornice_up.png')"></div>
-    <div id="cornice_center" style="width:900px; height:569px; background-image:url('img/cornice_center.png'); background-repeat:repeat-y;">
+    <div class="cornice" id="cornice_up" style="width:900px; height:24px; background-image:url('img/cornice_up.png')"></div>
+    <div class="cornice" id="cornice_center" style="width:900px; height:569px; background-image:url('img/cornice_center.png'); background-repeat:repeat-y;">
       <div id="slideshow">
         <img src="img/slider/image_1.jpg" class="active" />
         <?php
@@ -57,7 +58,7 @@ if ($d) {
         ?>
       </div>
      </div>
-    <div id="cornice_bottom" style="width:900px; height:27px; background-image:url('img/cornice_bottom.png')"></div>
+    <div class="cornice" id="cornice_bottom" style="width:900px; height:27px; background-image:url('img/cornice_bottom.png')"></div>
     <div id="logo_header" style="z-index:-1; width:441px; height:179px; background-image:url('img/bg_header.png'); position:absolute; left:442px; top:14px;"></div>
     <div id="navigation_menu" style="-webkit-border-radius: 20px 0px 0px 20px;
                 -moz-border-radius: 20px 0px 0px 20px;
@@ -82,7 +83,7 @@ if ($d) {
       <em style="margin-left:12px; position:relative; top:10px">Nocera Inferiore (SA) - Via Roma, 55</em>
     </div>
     <div id="bg_contenuto"style="width:293px; height:456px; background-image:url('img/flower.png'); position:absolute; top:120px; left:589px;z-index:-2; opacity:0.7"></div>
-    <div id="foto_centrali" style="width:172px; height:340px; background-image:url('img/foto_centrali.png'); position:absolute; top:215px; left:355px;"></div>
+    <div id="foto_centrali" style="z-index:2; width:172px; height:340px; background-image:url('img/foto_centrali.png'); position:absolute; top:215px; left:355px;"></div>
     <div id="credits_bar" style="background-color: black;
                 border-top-left-radius: 50px;
                 color: white;
