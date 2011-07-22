@@ -77,6 +77,6 @@ input.testo_input {
 }
 .nome_album{
   position:relative;
-  top:-120px;
-  left:30px;
+  top:-190px;
+  text-align:center;
 }
