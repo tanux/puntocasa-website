@@ -45,8 +45,8 @@ if ($d) {
 </head>
 <body>
   <div id="content_all">
-    <div class="cornice" id="cornice_up" style="width:900px; height:24px; background-image:url('img/cornice_up.png')"></div>
-    <div class="cornice" id="cornice_center" style="width:900px; height:569px; background-image:url('img/cornice_center.png'); background-repeat:repeat-y;">
+    <div class="cornice" id="cornice_up" style="width:900px; height:24px; background-image:url('img/cornice_up_2.png')"></div>
+    <div class="cornice" id="cornice_center" style="width:900px; height:569px; background-image:url('img/cornice_center_2.png'); background-repeat:repeat-y;">
       <div id="slideshow">
         <img src="img/slider/image_1.jpg" class="active" />
         <?php
@@ -58,7 +58,7 @@ if ($d) {
         ?>
       </div>
      </div>
-    <div class="cornice" id="cornice_bottom" style="width:900px; height:27px; background-image:url('img/cornice_bottom.png')"></div>
+    <div class="cornice" id="cornice_bottom" style="width:900px; height:24px; background-image:url('img/cornice_bottom_2.png')"></div>
     <div id="logo_header" style="z-index:-1; width:441px; height:179px; background-image:url('img/bg_header.png'); position:absolute; left:442px; top:14px;"></div>
     <div id="navigation_menu" style="-webkit-border-radius: 20px 0px 0px 20px;
                 -moz-border-radius: 20px 0px 0px 20px;
@@ -74,7 +74,7 @@ if ($d) {
                 font-size:11pt;
                 line-height:22px;
                 text-align:center;">
-      <a href="chi_siamo.php">Chi Siamo</a> | <a href="immagini_d.php">Immagini</a> | <a href="contatti.php">Contatti</a> | <a href="dove_siamo.php">Dove Siamo</a>
+      <a href="chi_siamo.php">Chi Siamo</a> | <a href="immagini.php">Immagini</a> | <a href="contatti.php">Contatti</a> | <a href="dove_siamo.php">Dove Siamo</a>
     </div>
     <div id="text_header"style="position:absolute;top:16px; left:445px; color:white">
       <div style="height:43px; font-family: 'Waiting for the Sunrise', cursive; font-size:23pt;margin-left:20px">Punto Casa di Umberto Speranza</div>

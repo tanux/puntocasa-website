@@ -4,7 +4,7 @@
                 <div id="bottom_menubar">
                     <a href="index.php">Home</a> |
                     <a href="chi_siamo.php">Chi Siamo</a> |
-                    <a href="immagini_d.php">Immagini</a> |
+                    <a href="immagini.php">Immagini</a> |
                     <a href="contatti.php">Contatti</a> |
                     <a href="dove_sono.php">Dove Sono</a> |
                     <a href="note_legali.php">Note Legali</a> |
