@@ -75,3 +75,8 @@ input.testo_input {
   font-size:11pt;
   color:#003399;
 }
+.nome_album{
+  position:relative;
+  top:-120px;
+  left:30px;
+}
