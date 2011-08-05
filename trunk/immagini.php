@@ -22,6 +22,7 @@ mysql_close($connessione);
     <script src="js/jquery.newslider.js"></script> 
     <link rel="stylesheet" href="css/newslider.css" type="text/css" />
     <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+    <link rel="stylesheet" href="css/nyroModal.css" type="text/css" media="screen" />
 <?php   require_once 'init.php'; ?>
     <div style="color:#003366; font-family: 'Reenie Beanie', arial, serif; font-size:30pt; position:absolute; top:230px; left:560px;">Prodotti</div>
 
@@ -102,16 +103,15 @@ mysql_close($connessione);
                     "</div>"+ //chiudo gallery clearfix
                     "</div>"+ //chiudo thumbnail_content
                     "<div class='nome_album' id='"+id_photoset+"'>"+
-                      "<a id='"+id_photoset+"' class='nome_set'>"+nome_photoset+"</a>"+
+                      "<a href='show_gallery.php' id='"+id_photoset+"' class='nyroModal'>"+nome_photoset+"</a>"+
                     "</div>"+
                     "</div>");// chiudo div nome classe
             j++;
           });
         });
       });
-      $('.nome_album').live("click", function(){
-        id = $(this).attr('id');
-        alert(id);
+      $('.nome_album').live("mouseover", function(){
+        $('.nyroModal').nyroModal();
       });
       function get_flickr_images( id ) {
         api_key='24ae51960a8362527dc74421d11d3829';
