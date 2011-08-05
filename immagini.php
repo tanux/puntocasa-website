@@ -102,15 +102,16 @@ mysql_close($connessione);
                     "</div>"+ //chiudo gallery clearfix
                     "</div>"+ //chiudo thumbnail_content
                     "<div class='nome_album' id='"+id_photoset+"'>"+
-                    "<a id='"+id_photoset+"' href='show_gallery.php' class='nome_set'>"+nome_photoset+"</a>"+
+                      "<a id='"+id_photoset+"' class='nome_set'>"+nome_photoset+"</a>"+
                     "</div>"+
                     "</div>");// chiudo div nome classe
             j++;
           });
         });
       });
-      $('.titolo').mouseover(function(){
-        $('.thumbnail').css('opacity','1');
+      $('.nome_album').live("click", function(){
+        id = $(this).attr('id');
+        alert(id);
       });
       function get_flickr_images( id ) {
         api_key='24ae51960a8362527dc74421d11d3829';
