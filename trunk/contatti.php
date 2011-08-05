@@ -68,6 +68,11 @@
     <script src="form_validator/js/language/jquery.validationEngine-it.js" type="text/javascript" charset="utf-8"></script>
     <script src="form_validator/js/jquery.validationEngine.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" charset="utf-8">
+      var nome = $('#nome').val();
+      var telefono = $('#telefono').val();
+      var email = $('#email').val();
+      var messaggio = $('#messaggio').val();
+      var consenso = $('#consenso').val();
       $(document).ready(function(){
         $("#formID").validationEngine({
           ajaxFormValidation: true,
@@ -82,8 +87,6 @@
         return true;
       }
       function ajaxValidationCallback(status, form, json, options){
-        if (window.console)
-          console.log("Inviata!");
         if (status === true) {
           $('#waitgif').hide();
           $('#positive_response').show();
@@ -91,7 +94,16 @@
         }
       }
       function reset_field(){
-        window.location.href = "contatti.php";
+        $('#nome').val(nome);
+        $('#telefono').val(telefono);
+        $('#email').val(email);
+        $('#messaggio').val(messaggio);
+        $('input[type=text]').css({background:'#FFFFFF'});
+        $('input[type=text]').parent().css({background:'#FFFFFF'});
+        $('input[type=text]').css({color:'#999999'});
+        $('.testo_messaggio').css({background:'#FFFFFF'});
+        $('.testo_messaggio').parent().css({background:'#FFFFFF'});
+        $('.testo_messaggio').css({color:'#999999'});
       }
       function checkin(field, rules, i, options){
         if (field.val() == field.attr('title')) {

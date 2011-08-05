@@ -15,19 +15,21 @@ h2 {font-size:20px; color:#2E2E2E; text-shadow: 1px 1px 0px #fff, 0 0 1px #999; 
 	background:url(../img/bg_slider_set.png);
   top:60px;
   left:120px;
-}
+  }
 	
 /*NEWS BOXES*/
 .news_box {
 	height:110px;
 	width:110px;
 	overflow:hidden;
-	border-radius:5px;
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
   margin-bottom:15px;
 	margin-right:8px;
 	background:#fff;
+  border:2px solid;
+  cursor:pointer;
 	}
 #news_block .last {
 	margin-right:0;
@@ -66,7 +68,7 @@ h2 {font-size:20px; color:#2E2E2E; text-shadow: 1px 1px 0px #fff, 0 0 1px #999; 
 	}
 	
 .news_slider {
-	width: 110px;
+	width: 118px;
 	height: 470px;
 	position: relative;
 	z-index: 10;
@@ -136,7 +138,6 @@ h2 {font-size:20px; color:#2E2E2E; text-shadow: 1px 1px 0px #fff, 0 0 1px #999; 
 	height: 8px; 
 	text-indent:-9999px;
 	outline:none;
-	cursor:pointer;
 	}
 .news_slider-spots li:hover, .news_slider-spots li.active {
 	background-position:-10px 0;
