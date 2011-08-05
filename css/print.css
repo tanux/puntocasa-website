@@ -1,0 +1,30 @@
+#percorso{
+  font-size:12pt;
+}
+#slideshow{
+  display:none;
+}
+#testo_header{
+  display:none;
+}
+.titolo_pagina_corrente{
+  display:none;
+}
+#mappa{
+  display:none;
+}
+.button{
+  display:none
+}
+#bottom{
+  display:none;
+}
+#printed{
+  visibility:visible;
+}
+#box_itinerario{
+  display:none;
+}
+#stampa_button{
+  display:none;
+}

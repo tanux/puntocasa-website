@@ -11,6 +11,6 @@
     <span>Desideri abbellire la tua casa con una tettoia in legno?</span> <br /><br />
     <span>Vuoi la garanzia di un lavoro di qualità in tempi rapidi?</span> <br /><br />
     <span>Punto Casa soddisfa le tue esigenze!</span> <br /><br />
-    <span>Contattaci!</span>
+    <span>Contattaci o raggiungi il nostro punto vendita!</span>
   </div>
 <?php   require_once 'finish.php'; ?>

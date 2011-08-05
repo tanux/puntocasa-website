@@ -1,6 +1,6 @@
 function newsSlider() {
 	var numeroLiPoint = $(".news_slider li").size();
-	var largLi = $(".news_slider li").height()+49;
+	var largLi = $(".news_slider li").height()+421;
 	var largLiTot = numeroLiPoint*largLi;
 	var termina = largLiTot-largLi;
 
@@ -19,7 +19,6 @@ function newsSlider() {
 				$('.news_slider-right').bind('click', moveBox1);
 				palliniInversa();
 			}
-
 		  });
 		}
 		else {

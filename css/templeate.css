@@ -18,7 +18,7 @@ body{
   padding-top:10px;
 }
 #contenuto{
-  width:300px;
+  width:311px;
   position:absolute;
   left:560px;
   top:300px;
@@ -77,6 +77,15 @@ input.testo_input {
 }
 .nome_album{
   position:relative;
-  top:-190px;
+  top:-245px;
   text-align:center;
+  width:100%;
+  height:100%;
+  line-height:115px;
+}
+#printed{
+  display:none;
+}
+.thumbnail{
+  opacity:0.5;
 }

@@ -3,10 +3,9 @@
             <div id="bottom">
                 <div id="bottom_menubar">
                     <a href="index.php">Home</a> |
-                    <a href="chi_siamo.php">Chi Siamo</a> |
-                    <a href="immagini.php">Immagini</a> |
+                    <a href="immagini.php">Prodotti</a> |
                     <a href="contatti.php">Contatti</a> |
-                    <a href="dove_sono.php">Dove Sono</a> |
+                    <a href="dove_siamo.php">Dove Siamo</a> |
                     <a href="note_legali.php">Note Legali</a> |
                     <a href="sitemap.php">Mappa Sito</a>
                     <span style="float:right;">

@@ -66,7 +66,7 @@ if ($d) {
                 background-color:black;
                 position:absolute;
                 top:195px;
-                left:512px;
+                left:513px;
                 height:25px;
                 width:370px;
                 color:white;
@@ -74,13 +74,13 @@ if ($d) {
                 font-size:11pt;
                 line-height:22px;
                 text-align:center;">
-      <a href="chi_siamo.php">Chi Siamo</a> | <a href="immagini.php">Immagini</a> | <a href="contatti.php">Contatti</a> | <a href="dove_siamo.php">Dove Siamo</a>
+      <a href="index.php">Home Page</a> | <a href="immagini.php">Prodotti</a> | <a href="contatti.php">Contatti</a> | <a href="dove_siamo.php">Dove Siamo</a>
     </div>
     <div id="text_header"style="position:absolute;top:16px; left:445px; color:white">
       <div style="height:43px; font-family: 'Waiting for the Sunrise', cursive; font-size:23pt;margin-left:20px">Punto Casa di Umberto Speranza</div>
       <div style="margin-left:10px">Tende da interno - Tappezzeria - Tende da sole</div>
       <div style="margin-left:150px">Zanzariere - Veneziane - Tettoie in legno</div>
-      <em style="margin-left:12px; position:relative; top:10px">Nocera Inferiore (SA) - Via Roma, 55</em>
+      <em style="margin-left:12px; position:relative; top:10px">Nocera Inferiore (SA) - Via Roma, 53</em>
     </div>
     <div id="bg_contenuto"style="width:293px; height:456px; background-image:url('img/flower.png'); position:absolute; top:120px; left:589px;z-index:-2; opacity:0.7"></div>
     <div id="foto_centrali" style="z-index:2; width:172px; height:340px; background-image:url('img/foto_centrali.png'); position:absolute; top:215px; left:355px;"></div>
@@ -92,7 +92,7 @@ if ($d) {
                 font-style: italic;
                 font-weight: bold;
                 height: 50px;
-                left: 390px;
+                left: 391px;
                 position: absolute;
                 text-align: right;
                 top: 566px;
@@ -101,6 +101,6 @@ if ($d) {
                 border:2px solid white;
                 padding-top:1px">
       <span style="margin-right:7px">Punto Casa di Umberto Speranza</span><br />
-      <span style="margin-right:7px">Via Roma, 55 - Nocera Inferiore (SA) - Tel:081-5174063 - P.IVA:555666333</span><br />
+      <span style="margin-right:7px">Via Roma, 53 - Nocera Inferiore (SA) - Tel:081-5174063 - P.IVA:555666333</span><br />
       <span style="margin-right:7px">&copy; 2011 Tutti i diritti sono riservati</span><br />
     </div>
