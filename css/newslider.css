@@ -97,7 +97,7 @@ h2 {font-size:20px; color:#2E2E2E; text-shadow: 1px 1px 0px #fff, 0 0 1px #999; 
 	cursor: pointer;
 	position:absolute;
 	top:140px;
-	z-index:100;
+	z-index:11;
 	}
 .news_slider-right {
 	background-position: 0 -25px;

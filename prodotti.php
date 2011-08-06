@@ -17,7 +17,7 @@ mysql_close($connessione);
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <title>Immagini | Punto Casa Tendaggi di Umberto Speranza</title>
+    <title>Prodotti | Punto Casa Tendaggi di Umberto Speranza</title>
     <meta name="description" content="Immagini del Dott.Salvatore Coppola, oculista di avellino" />
     <script src="js/jquery.newslider.js"></script> 
     <link rel="stylesheet" href="css/newslider.css" type="text/css" />
@@ -96,16 +96,16 @@ mysql_close($connessione);
               nome_classe = 'news_box last';
             }
             li.append("<div class='"+nome_classe+"' id='"+id_photoset+"'>"+ //deve essere chiuso con div
-                    "<div class='bg_set' id='"+id_photoset+"'></div>"+
-                    "<div class='thumbnail_content'>"+ //deve essere chiuso
-                    "<div class='gallery clearfix'  id='"+id_photoset+"'>"+ //deve essere chiuso
-                    "<img class='thumbnail' id='"+id_photoset+"' src='"+url_photo+"' />"+
-                    "</div>"+ //chiudo gallery clearfix
-                    "</div>"+ //chiudo thumbnail_content
-                    "<div class='nome_album' id='"+id_photoset+"'>"+
-                      "<a href='show_gallery.php' id='"+id_photoset+"' class='nyroModal'>"+nome_photoset+"</a>"+
-                    "</div>"+
-                    "</div>");// chiudo div nome classe
+                        "<div class='bg_set' id='"+id_photoset+"'></div>"+
+                        "<div class='thumbnail_content'>"+ //deve essere chiuso
+                          "<div class='gallery clearfix'  id='"+id_photoset+"'>"+ //deve essere chiuso
+                            "<img class='thumbnail' id='"+id_photoset+"' src='"+url_photo+"' />"+
+                          "</div>"+ //chiudo gallery clearfix
+                        "</div>"+ //chiudo thumbnail_content
+                        "<div class='nome_album' id='"+id_photoset+"'>"+
+                          "<a target='_blank' href='show_gallery.php?id_photoset="+id_photoset+"' class='nyroModal' id='"+id_photoset+"'>"+nome_photoset+"</a>"+
+                        "</div>"+
+                      "</div>");// chiudo div nome classe
             j++;
           });
         });
@@ -113,17 +113,13 @@ mysql_close($connessione);
       $('.nome_album').live("mouseover", function(){
         $('.nyroModal').nyroModal();
       });
-      function get_flickr_images( id ) {
-        api_key='24ae51960a8362527dc74421d11d3829';
-        photoset_id=id;
-        $_url= 'http://api.flickr.com/services/rest/?&method=flickr.photosets.getPhotos&api_key='+api_key+'&photoset_id='+photoset_id+'&format=json&jsoncallback=?';
-        $.getJSON($_url, function(data) {
-          $.each(data.photoset.photo, function(i,item){
-            var photoUrl = 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_b.jpg'
-            $("<a></a>").appendTo('#'+photoset_id+' .gallery').attr({href:photoUrl,rel:'prettyPhoto[gallery1]'});
-          });
-        });
-      }
+
+      $('a.nyroModal').live("click",function(){
+        id = $(this).attr('id');
+        $(this).addClass('nyroModal');
+        $('nyroModal').nyroModal();
+      });
+
 
       $('.categoria_prodotto').mouseover(function(){
         id = $(this).attr('id');

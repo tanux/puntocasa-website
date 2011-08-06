@@ -4,7 +4,7 @@ $id_photoset = $_GET['id_photoset'];
 
 $connessione = mysql_connect($nomehost,$nomeuser,$password);
 if (!$connessione) {
-    die('Could not connect: ' . mysql_error());
+    die('Non riesco a connettermi: ' . mysql_error());
     exit;
 }
 else{

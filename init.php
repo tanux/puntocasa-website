@@ -74,7 +74,7 @@ if ($d) {
                 font-size:11pt;
                 line-height:22px;
                 text-align:center;">
-      <a href="index.php">Home Page</a> | <a href="immagini.php">Prodotti</a> | <a href="contatti.php">Contatti</a> | <a href="dove_siamo.php">Dove Siamo</a>
+      <a href="index.php">Home Page</a> | <a href="prodotti.php">Prodotti</a> | <a href="contatti.php">Contatti</a> | <a href="dove_siamo.php">Dove Siamo</a>
     </div>
     <div id="text_header"style="position:absolute;top:16px; left:445px; color:white">
       <div style="height:43px; font-family: 'Waiting for the Sunrise', cursive; font-size:23pt;margin-left:20px">Punto Casa di Umberto Speranza</div>
