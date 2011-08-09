@@ -1,18 +1,20 @@
 function newsSlider() {
 	var numeroLiPoint = $(".news_slider li").size();
-	var largLi = $(".news_slider li").height()+421;
+	var largLi = $("ul.slides li").height()+49;
 	var largLiTot = numeroLiPoint*largLi;
-	var termina = largLiTot-largLi;
-
+	var termina = (largLiTot-largLi);
+  alert('numeroLiPoint= '+numeroLiPoint+'; largLi= '+largLi+'; largLiTot='+largLiTot+'; termina= '+termina);
 	//larghezza dinamica dell'ul
 	var boxUl = $(".news_slider ul.slides");
 	boxUl.css("height",largLiTot);
 
-	$('.news_slider-right').bind('click', moveBox1);
+	$('.news_slider-right').bind('click', moveBox1); //down
 	function moveBox1(e1) {
 	e1.preventDefault();
 		$('.news_slider-right').unbind();
-		if(boxUl.css("top")!=-termina+"px"){
+    alert('boxUl.css= '+boxUl.css("top")+'e termina='+termina);
+		if( boxUl.css("top") != (-termina)+'px'){
+      alert('Sono entrato nell if');
 			boxUl.stop().animate({top:"-="+largLi+"px"}, {
 			duration: 500,
 			complete: function() {
@@ -22,15 +24,16 @@ function newsSlider() {
 		  });
 		}
 		else {
+      alert('Sono entrato nell else');
 			$('.news_slider-right').bind('click', moveBox1);
 		}
 	}
 
-	$('.news_slider-left').bind('click', moveBox2);
+	$('.news_slider-left').bind('click', moveBox2); //up
 	function moveBox2(e2) {
 	e2.preventDefault();
 		$('.news_slider-left').unbind();
-		if(boxUl.css("top")!="0px"){
+		if( boxUl.css("top")!="0px" ){
 			boxUl.stop().animate({top:"+="+largLi+"px"}, {
 			duration: 500,
 			complete: function() {
@@ -43,8 +46,6 @@ function newsSlider() {
 			$('.news_slider-left').bind('click', moveBox2);
 			}
 	}
-
-
 	//creazione pallini
 	for(i=0; i<numeroLiPoint; i++){
 		$(".news_slider-spots").append("<li></li>");

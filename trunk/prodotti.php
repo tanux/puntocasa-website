@@ -18,19 +18,11 @@ mysql_close($connessione);
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <title>Prodotti | Punto Casa Tendaggi di Umberto Speranza</title>
-    <meta name="description" content="Immagini del Dott.Salvatore Coppola, oculista di avellino" />
-    <script src="js/jquery.newslider.js"></script> 
+    <meta name="description" content="Prodotti di Puntocasa Tendaggi: Tende da sole, Tende da interno, Zanzariere, Veneziane" />
     <link rel="stylesheet" href="css/newslider.css" type="text/css" />
-    <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
     <link rel="stylesheet" href="css/nyroModal.css" type="text/css" media="screen" />
 <?php   require_once 'init.php'; ?>
     <div style="color:#003366; font-family: 'Reenie Beanie', arial, serif; font-size:30pt; position:absolute; top:230px; left:560px;">Prodotti</div>
-
-    <script type="text/javascript">
-      $(document).ready(function() {
-        newsSlider();
-      });
-    </script>
     <div id="content_categorie_prodotti" style="position: absolute; top: 275px; left: 525px; width: 350px; height: 280px; margin-top:10px">
       <?php
         while ( $row = mysql_fetch_assoc($result) )
@@ -53,8 +45,7 @@ mysql_close($connessione);
     <div id="news_block">
         <div class="news_slider">
           <ul class="slides">
-
-           </ul> <!-- chiude slides -->
+          </ul> <!-- chiude slides -->
         </div> <!-- chiude news_slider -->
     </div> <!-- Chiude id="contenuto" -->
     <div class="news_slider-left"></div>
@@ -65,8 +56,15 @@ mysql_close($connessione);
       <script type="text/javascript" src="js/jquery.nyroModal-ie6.min.js"></script>
     <![endif]-->
     <script type="text/javascript">
+      //Creazione album in base alla categoria di prodotto scelta
       $('.categoria_prodotto').click(function(){
-        $('ul.slides').html('');
+        $('#news_block').animate({
+          width:"124px",
+          left:"18px"
+        }, 700).css('z-index','0');
+        $('ul.slides').html('').css('top','0px');
+        $('.news_slider-right').hide();
+        $('.news_slider-left').hide();
         id_set = $(this).attr('id');
         $.getJSON('crea_albums.php', {id_photoset: id_set}, function(data){
           num_sets = data.length;
@@ -103,29 +101,52 @@ mysql_close($connessione);
                           "</div>"+ //chiudo gallery clearfix
                         "</div>"+ //chiudo thumbnail_content
                         "<div class='nome_album' id='"+id_photoset+"'>"+
-                          "<a target='_blank' href='show_gallery.php?id_photoset="+id_photoset+"' class='nyroModal' id='"+id_photoset+"'>"+nome_photoset+"</a>"+
+                          "<a target='_blank' href='show_gallery.php?id_photoset="+id_photoset+"' class='nyroModal link_nome_album' id='"+id_photoset+"'>"+nome_photoset+"</a>"+
                         "</div>"+
                       "</div>");// chiudo div nome classe
             j++;
           });
+          numeroLiPoint = $(".news_slider li").size();
+          largLi = $("ul.slides li").height()+49;
+          largLiTot = numeroLiPoint*largLi;
+          termina = (largLiTot-largLi);
+          if (numeroLiPoint >1){
+            $('.news_slider-right').show();
+            $('.news_slider-left').show();
+          }
         });
       });
-      $('.nome_album').live("mouseover", function(){
+
+      $('a.link_nome_album').live("mouseover", function(){
         $('.nyroModal').nyroModal();
+        id = id = $(this).attr('id');
+        $('#'+id+' img.thumbnail').animate({opacity:'1'}, 500);
+      }).live("mouseleave", function(){
+          $('#'+id+' img.thumbnail').animate({opacity:'0.2'}, 300);
       });
-
-      $('a.nyroModal').live("click",function(){
-        id = $(this).attr('id');
-        $(this).addClass('nyroModal');
-        $('nyroModal').nyroModal();
-      });
-
 
       $('.categoria_prodotto').mouseover(function(){
         id = $(this).attr('id');
         $('#'+id+' .thumbnail_categoria').css('opacity','1');
       }).mouseleave(function(){
           $('#'+id+' .thumbnail_categoria').css('opacity','0.2');
+      });
+
+      //up
+      $('.news_slider-left').live("click", function(){
+        boxUl = $(".news_slider ul.slides");
+        if ( boxUl.css('top') != '0px')
+          boxUl.animate({top:"+="+largLi+"px"}, 1000,'easeOutBack');
+        else
+          return;
+      });
+      //down
+      $('.news_slider-right').live("click", function(){        
+        boxUl = $(".news_slider ul.slides");
+        if ( boxUl.css('top') != -termina+'px')
+          boxUl.animate({top:"-="+largLi+"px"}, 1000,'easeOutBack');
+        else
+          return;
       });
     </script>
 <?php  require_once 'finish.php'?>

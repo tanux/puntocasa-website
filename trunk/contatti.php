@@ -21,7 +21,20 @@
 <?php   require_once 'init.php'; ?>
     <div style="color:#003366; font-family: 'Reenie Beanie', arial, serif; font-size:30pt; position:absolute; top:230px; left:560px;">Contatti</div>
     <div id="contenuto">
-    Qui ci vanno le info per i contatti.
+      <div id="box_info_contatti" style="width:318px; height:196px; background:url('img/bg_box_contatti.png');margin-left:4px; text-align:left;">
+        <div id="tel_fax" class="contatto" style="line-height:16px;font-family:Verdana; font-size:20px; color:white; position:relative; top:40px; left:73px; width:245px; margin-bottom:16px">
+          <div class="categoria_contatto" style="font-size:12px;">Telefono e Fax</div>
+          <div class="info" style="margin-left:10px">081-5174063</div>
+        </div>
+        <div id="cellulare" class="contatto" style="line-height:16px; font-family:Verdana; font-size:20px; color:white; position:relative; top:40px; left:73px; width:245px; margin-bottom:16px">
+          <div class="categoria_contatto" style="font-size:12px;">Cellulare</div>
+          <div class="info" style="margin-left:10px">3286262875</div>
+        </div>
+        <div id="mail" class="contatto" style="line-height:16px;font-family:Verdana; font-size:20px; color:white; position:relative; top:40px; left:73px; width:245px; margin-bottom:16px">
+          <div class="categoria_contatto" style="font-size:12px;">Email</div>
+          <div class="info" style="margin-left:10px; font-size:16px;">speranzaumberto@libero.it</div>
+        </div>
+      </div>
     </div>
     <div id="content_form" style="width:390px; padding-left:10px;padding-top:10px;padding-bottom:10px;
                                   background-color:white; filter:alpha(opacity=90); opacity:0.9; position:absolute;top:70px; left:30px;

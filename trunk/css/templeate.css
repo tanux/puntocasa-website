@@ -87,6 +87,11 @@ input.testo_input {
   display:none;
 }
 .thumbnail{
-  opacity:0.5;
+  opacity:0.2;
 }
-
+.link_nome_album{
+  color:black;
+  font-family:Verdana;
+  font-weight:bold;
+  font-size:13px;
+}
