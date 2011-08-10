@@ -98,15 +98,17 @@ input.testo_input {
   font-size:13px;
 }
 #cornice_up{
-  background-image:url('../img/cornice_up_2.png');
+  background-image:url('../img/cornice_top_bottom.png');
+  background-position: 0px 0px;
 }
 #cornice_center{
   height:569px;
-  background-image:url('../img/cornice_center_2.png');
+  background-image:url('../img/cornice_center.png');
   background-repeat:repeat-y;
 }
 #cornice_bottom{
-  background-image:url('../img/cornice_bottom_2.png');
+  background-image:url('../img/cornice_top_bottom.png');
+  background-position: 0px -34px;
 }
 #logo_header{
   z-index:-1;
