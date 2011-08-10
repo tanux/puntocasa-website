@@ -1,6 +1,7 @@
 <?php
 $id_photoset = $_GET['id_photoset'];
 $nome_photoset = $_GET['nome_photoset'];
+//$id_photoset = '72157627277187687';
 ?>
 <html>
   <head>
@@ -10,7 +11,7 @@ $nome_photoset = $_GET['nome_photoset'];
         box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
         margin: 0 auto;
         padding: 5px;
-        width: 450px;
+        width: 700px;
       }
       .galleria-layer div {
         background: url("img/bg-div-galleria-layer.png") repeat scroll 0 0 transparent;
@@ -18,7 +19,7 @@ $nome_photoset = $_GET['nome_photoset'];
         left: 10px;
         padding: 10px;
         position: absolute;
-        top: 335px;
+        top: 400px;
       }
     </style>
     <title></title>
@@ -43,7 +44,8 @@ $nome_photoset = $_GET['nome_photoset'];
           });
           Galleria.loadTheme('js/galleria.classic.min.js');
           $('#galleria').galleria({
-            height:450,
+            width:700,
+            height:530,
             dataSource:dati,
             lightbox: true
           });
