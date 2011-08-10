@@ -7,7 +7,7 @@
 	width: 100%;
 	background: #000;
 	opacity: 0.7;
-  z-index:10;
+  z-index:5001;
 }
 .nmReposition {
 	position: absolute;
@@ -19,7 +19,7 @@
 	height: 18px;
 	text-indent: -9999em;
 	background: url(../img/close.gif);
-  z-index:12;
+  z-index:5001;
 }
 .nyroModalTitle {
 	top: -26px;
@@ -33,11 +33,11 @@
 	border: 4px solid #777;
 	margin: 25px;
 	background: #fff;
-  z-index:12;
+  z-index:5001;
 }
 .nyroModalCont iframe {
-	width: 800px;
-	height: 500px;
+	width: 475px;
+	height: 476px;
   border:none;
 }
 .nyroModalError {

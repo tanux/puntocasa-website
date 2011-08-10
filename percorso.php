@@ -1,12 +1,13 @@
 <?php
-  $fd_stato = $_POST['fd_stato'];
-  $fd_provincia = $_POST['fd_provincia'];
-  $fd_comune = $_POST['fd_comune'];
-  $fd_via = $_POST['fd_via'];
+require_once 'inc.php/titolo_sito.inc.php';
+$fd_stato = $_POST['fd_stato'];
+$fd_provincia = $_POST['fd_provincia'];
+$fd_comune = $_POST['fd_comune'];
+$fd_via = $_POST['fd_via'];
 ?>
 <html>
   <head>
-    <title>Stampa del tuo percorso | Punto Casa Tendaggi di Umberto Speranza</title>
+    <title>Stampa del tuo percorso | <?php echo $titolo_sito ?></title>
     <link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="js/googlemaps.js"></script>

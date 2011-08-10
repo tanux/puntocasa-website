@@ -12,7 +12,7 @@ h2 {font-size:20px; color:#2E2E2E; text-shadow: 1px 1px 0px #fff, 0 0 1px #999; 
 	margin:0 auto;
 	position:absolute;
 	padding:18px 3px 10px;
-	background:url(../img/bg_slider_set_2.png);
+	background:url(../img/bg_slider_albums.png);
   background-repeat-x:no-repeat;
   top:45px;
   left:12px;
@@ -71,16 +71,18 @@ h2 {font-size:20px; color:#2E2E2E; text-shadow: 1px 1px 0px #fff, 0 0 1px #999; 
 	}
 
 .news_slider {
-  height: 395px;
-  margin: 18px auto 10px;
+  height: 400px;
+  margin: 8px auto 10px;
   overflow: hidden;
   position: relative;
-  top: 60px;
-  width: 118px;
+  top: 53px;
+  left:-5px;
+  width: 112px;
   z-index: 10;
+  padding-top:20px;
 }
 .news_slider ul.slides {
-  height: 393px;
+  height: 391px;
   left: 0;
   position: relative;
   width: auto;
@@ -104,13 +106,13 @@ h2 {font-size:20px; color:#2E2E2E; text-shadow: 1px 1px 0px #fff, 0 0 1px #999; 
 	}
 .news_slider-right {
 	background-position: 0 -25px;
-	left:70px;
-  top:535px;
+	left:60px;
+  top:530px;
 	}
 .news_slider-left {
   background-position: 0 0px;
-	left:70px;
-  top:90px;  
+	left:60px;
+  top:85px;
 	}
 .news_slider-right:hover {
 	background-position: 0px -85px;

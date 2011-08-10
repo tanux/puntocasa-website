@@ -1,6 +1,6 @@
 <?php
 $id_photoset = $_GET['id_photoset'];
-
+$nome_photoset = $_GET['nome_photoset'];
 ?>
 <html>
   <head>
@@ -57,7 +57,7 @@ $id_photoset = $_GET['id_photoset'];
  
   </head>
   <body>
-    <div class="comodo" id="<?php echo $id_photoset?>"></div>
+    <div class="comodo" id="<?php echo $id_photoset?>" title="<?php echo $nome_photoset?>"></div>    
     <div id="content_galleria">
       <div id="galleria"></div>
     </div>
