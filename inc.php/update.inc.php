@@ -1,7 +1,7 @@
 <h1>Log Aggiornamento database PuntoCasa</h1>
 <br />
 <?php
-require_once 'phpFlickr/phpFlickr.php';
+require_once '../phpFlickr/phpFlickr.php';
 require_once 'config.inc.php';
 
 $api_key = '24ae51960a8362527dc74421d11d3829';
@@ -23,7 +23,7 @@ else{
   echo "Connessione al server avvenuta con successo";
   echo "<br /> Ora seleziono il database";
   if (mysql_select_db($nome_db)){
-    echo "<br /> Database selezionato con successo";
+    echo "<br /> Database selezionato con successo <br />";
   }
   else{
     die('Errore nella selezione del database: ' . mysql_error());
@@ -57,7 +57,7 @@ foreach ($photosets['photoset'] as $photoset)
                                                'categoria_prodotto' => $categoria,
                                           ));
   if (!$result) {
-    $update_query = 'UPDATE sottocategoria_prodotto SET nome="'.$nome_photoset.'" WHERE id='.$id_photoset;
+    $update_query = 'UPDATE sottocategoria_prodotto SET nome="'.$nome_photoset.'", logo="'.$url_photo.'" WHERE id='.$id_photoset;
     $result_update = mysql_query($update_query);
     if (!$result_update){
       die('Errore nella connessione al server in cui risiede il database: ' . mysql_error());
