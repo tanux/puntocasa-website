@@ -1,5 +1,5 @@
 <?php
-require_once 'config.inc.php';
+require_once 'inc.php/config.inc.php';
 $id_photoset = $_GET['id_photoset'];
 
 $connessione = mysql_connect($nomehost,$nomeuser,$password);

@@ -1,5 +1,6 @@
 <?php
-require_once 'config.inc.php';
+require_once 'inc.php/titolo_sito.inc.php';
+require_once 'inc.php/config.inc.php';
 $connessione = mysql_connect($nomehost,$nomeuser,$password);
 if (!$connessione) {
     die('Non posso connettermi: ' . mysql_error());
@@ -17,31 +18,33 @@ mysql_close($connessione);
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <title>Prodotti | Punto Casa Tendaggi di Umberto Speranza</title>
+    <title>Prodotti | <?php echo $titolo_sito ?></title>
     <meta name="description" content="Prodotti di Puntocasa Tendaggi: Tende da sole, Tende da interno, Zanzariere, Veneziane" />
-    <link rel="stylesheet" href="css/newslider.css" type="text/css" />
+    <link rel="stylesheet" href="css/newslider.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/nyroModal.css" type="text/css" media="screen" />
 <?php   require_once 'init.php'; ?>
-    <div style="color:#003366; font-family: 'Reenie Beanie', arial, serif; font-size:30pt; position:absolute; top:230px; left:560px;">Prodotti</div>
-    <div id="content_categorie_prodotti" style="position: absolute; top: 275px; left: 525px; width: 350px; height: 280px; margin-top:10px">
+    <div id="titolo_pagina_corrente">Prodotti</div>
+    <div id="content_categorie_prodotti">
       <?php
         while ( $row = mysql_fetch_assoc($result) )
         {
       ?>
-          <div id="<?php echo $row['id']; ?>" class="categoria_prodotto" style="margin:5px; cursor:pointer; height:85px;">
-            <div class="thumbnail_categoria" style="width:75px; height:75px; margin:5px; opacity:0.2">
-              <img src="<?php echo $row['logo']; ?>" style="width:75px; height:75px;"/>
+          <div id="<?php echo $row['id']; ?>" class="categoria_prodotto">
+            <div class="thumbnail_categoria">
+              <img src="<?php echo $row['logo']; ?>" style="width:75px; height:75px;" alt="Logo di <?php echo $row['nome']; ?>"/>
             </div>
-            <div class="test_associato" style="position:relative; top:-84px; left:85px; width:250px; font-family:Verdana;">
-              <div class="titolo" style="font-size:14px; font-weight:bold;"><?php echo $row['nome']; ?></div>
+            <div class="testo_associato">
+              <div class="nome_categoria"><?php echo $row['nome']; ?></div>
               <hr />
-              <div class="descrizione" style="font-size:11px;"><?php echo $row['descrizione']; ?></div>
+              <div class="descrizione_categoria"><?php echo $row['descrizione']; ?></div>
             </div>
           </div>
       <?php
         }
       ?>
     </div>
+    <div class="incavatura" id="incavatura_up"></div>
+    <div class="incavatura" id="incavatura_down"></div>
     <div id="news_block">
         <div class="news_slider">
           <ul class="slides">
@@ -50,7 +53,6 @@ mysql_close($connessione);
     </div> <!-- Chiude id="contenuto" -->
     <div class="news_slider-left"></div>
     <div class="news_slider-right"></div>
-    <script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" src="js/jquery.nyroModal.custom.js"></script>
     <!--[if IE 6]>
       <script type="text/javascript" src="js/jquery.nyroModal-ie6.min.js"></script>
@@ -93,17 +95,17 @@ mysql_close($connessione);
             else if (j == (num_set_into_li-1)){
               nome_classe = 'news_box last';
             }
-            li.append("<div class='"+nome_classe+"' id='"+id_photoset+"'>"+ //deve essere chiuso con div
+            li.append("<div class='"+nome_classe+"' id='"+id_photoset+"'>"+
                         "<div class='bg_set' id='"+id_photoset+"'></div>"+
-                        "<div class='thumbnail_content'>"+ //deve essere chiuso
-                          "<div class='gallery clearfix'  id='"+id_photoset+"'>"+ //deve essere chiuso
+                        "<div class='thumbnail_content'>"+
+                          "<div class='gallery clearfix'  id='"+id_photoset+"'>"+
                             "<img class='thumbnail' id='"+id_photoset+"' src='"+url_photo+"' />"+
-                          "</div>"+ //chiudo gallery clearfix
-                        "</div>"+ //chiudo thumbnail_content
-                        "<div class='nome_album' id='"+id_photoset+"'>"+
-                          "<a target='_blank' href='show_gallery.php?id_photoset="+id_photoset+"' class='nyroModal link_nome_album' id='"+id_photoset+"'>"+nome_photoset+"</a>"+
+                          "</div>"+
                         "</div>"+
-                      "</div>");// chiudo div nome classe
+                        "<div class='nome_album' id='"+id_photoset+"'>"+
+                          "<a target='_blank' href='show_gallery.php?id_photoset="+id_photoset+"&nome_photoset="+nome_photoset+"' class='nyroModal link_nome_album' id='"+id_photoset+"'>"+nome_photoset+"</a>"+
+                        "</div>"+
+                      "</div>");
             j++;
           });
           numeroLiPoint = $(".news_slider li").size();
@@ -111,12 +113,12 @@ mysql_close($connessione);
           largLiTot = numeroLiPoint*largLi;
           termina = (largLiTot-largLi);
           if (numeroLiPoint >1){
+            $('.incavatura').show();
             $('.news_slider-right').show();
             $('.news_slider-left').show();
           }
         });
       });
-
       $('a.link_nome_album').live("mouseover", function(){
         $('.nyroModal').nyroModal();
         id = id = $(this).attr('id');
@@ -124,14 +126,12 @@ mysql_close($connessione);
       }).live("mouseleave", function(){
           $('#'+id+' img.thumbnail').animate({opacity:'0.2'}, 300);
       });
-
       $('.categoria_prodotto').mouseover(function(){
         id = $(this).attr('id');
         $('#'+id+' .thumbnail_categoria').css('opacity','1');
       }).mouseleave(function(){
           $('#'+id+' .thumbnail_categoria').css('opacity','0.2');
       });
-
       //up
       $('.news_slider-left').live("click", function(){
         boxUl = $(".news_slider ul.slides");
@@ -141,7 +141,7 @@ mysql_close($connessione);
           return;
       });
       //down
-      $('.news_slider-right').live("click", function(){        
+      $('.news_slider-right').live("click", function(){
         boxUl = $(".news_slider ul.slides");
         if ( boxUl.css('top') != -termina+'px')
           boxUl.animate({top:"-="+largLi+"px"}, 1000,'easeOutBack');

@@ -1,8 +1,14 @@
-<?php ?>
+<?php
+require_once 'inc.php/titolo_sito.inc.php';
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
+        <link rel="stylesheet" href="form_validator/css/validationEngine.jquery.css" type="text/css"/>
+        <link rel="stylesheet" href="css/nyroModal.css" type="text/css" media="screen" />
+        <title>Contatti | <?php echo $titolo_sito ?></title>
+        <meta name="description" content="Informazioni per contattare Punto Casa Tendaggi di Umberto Speranza" />
         <style type="text/css">
           #positive_response{
             display:none;
@@ -14,40 +20,32 @@
             background:url('img/ok.gif') no-repeat;
             padding-left:30px
           }
+          .nyroModalCont iframe
+          {
+            width: 800px;
+            height: 500px;
+          }
         </style>
-        <link rel="stylesheet" href="form_validator/css/validationEngine.jquery.css" type="text/css"/>
-        <title>Contatti | Punto Casa Tendaggi di Umberto Speranza</title>
-        <meta name="description" content="Informazioni per contattare il Dott.Salvatore Coppola, oculista di avellino" />
 <?php   require_once 'init.php'; ?>
-    <div style="color:#003366; font-family: 'Reenie Beanie', arial, serif; font-size:30pt; position:absolute; top:230px; left:560px;">Contatti</div>
+    <div id="titolo_pagina_corrente">Contatti</div>
     <div id="contenuto">
-      <div id="box_info_contatti" style="width:318px; height:196px; background:url('img/bg_box_contatti.png');margin-left:4px; text-align:left;">
-        <div id="tel_fax" class="contatto" style="line-height:16px;font-family:Verdana; font-size:20px; color:white; position:relative; top:40px; left:73px; width:245px; margin-bottom:16px">
-          <div class="categoria_contatto" style="font-size:12px;">Telefono e Fax</div>
-          <div class="info" style="margin-left:10px">081-5174063</div>
+      <div id="box_info_contatti">
+        <div id="tel_fax" class="contatto">
+          <div class="categoria_contatto">Telefono e Fax</div>
+          <div class="info">081-5174063</div>
         </div>
-        <div id="cellulare" class="contatto" style="line-height:16px; font-family:Verdana; font-size:20px; color:white; position:relative; top:40px; left:73px; width:245px; margin-bottom:16px">
-          <div class="categoria_contatto" style="font-size:12px;">Cellulare</div>
-          <div class="info" style="margin-left:10px">3286262875</div>
+        <div id="cellulare" class="contatto">
+          <div class="categoria_contatto">Cellulare</div>
+          <div class="info">3286262875</div>
         </div>
-        <div id="mail" class="contatto" style="line-height:16px;font-family:Verdana; font-size:20px; color:white; position:relative; top:40px; left:73px; width:245px; margin-bottom:16px">
-          <div class="categoria_contatto" style="font-size:12px;">Email</div>
-          <div class="info" style="margin-left:10px; font-size:16px;">speranzaumberto@libero.it</div>
+        <div id="mail" class="contatto">
+          <div class="categoria_contatto">Email</div>
+          <div class="info" style="font-size:16px;">speranzaumberto@libero.it</div>
         </div>
       </div>
     </div>
-    <div id="content_form" style="width:390px; padding-left:10px;padding-top:10px;padding-bottom:10px;
-                                  background-color:white; filter:alpha(opacity=90); opacity:0.9; position:absolute;top:70px; left:30px;
-                                  -webkit-border-radius: 10px;
-                                  -moz-border-radius: 10px;
-                                  border-radius: 10px;
-                                  -webkit-box-shadow: 0px 1px 7px 2px ;
-                                  -moz-box-shadow: 0px 1px 7px 2px ;
-                                  box-shadow: 0px 1px 7px 2px;
-                                  font-family:Verdana;
-                                  font-size:10pt;
-                                  ">
-      <div style="opacity:1">
+    <div id="content_form">
+      <div>
         <form id="formID" action="form_validator/ajax_submit.php" method="get">
           <div class="div_contatti">Nome e Cognome *</div>
           <div class="input_text">
@@ -67,7 +65,7 @@
           </div>
           <div style="width:300px; margin-bottom:10px">
             <input class="validate[required,funcCall[checked]]" type="checkbox" id="consenso" name="consenso" style="display:inline;" />
-            <span>Autorizzo il trattamento dei dati personali secondo il <a href="note_legali.php">D.Lgs 196/2003</a></span>
+            <span>Autorizzo il trattamento dei dati personali secondo il <a href="note_legali.php" class="nyroModal" target="_blank">D.Lgs 196/2003</a></span>
           </div>
           <input id="invia" class="button" type="submit" value="Invia" />
           <input class="button" type="button" value="Cancella" onclick="reset_field()" />
@@ -80,6 +78,10 @@
     </div>
     <script src="form_validator/js/language/jquery.validationEngine-it.js" type="text/javascript" charset="utf-8"></script>
     <script src="form_validator/js/jquery.validationEngine.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="js/jquery.nyroModal.custom.js"></script>
+    <!--[if IE 6]>
+      <script type="text/javascript" src="js/jquery.nyroModal-ie6.min.js"></script>
+    <![endif]-->
     <script type="text/javascript" charset="utf-8">
       var nome = $('#nome').val();
       var telefono = $('#telefono').val();
@@ -87,6 +89,7 @@
       var messaggio = $('#messaggio').val();
       var consenso = $('#consenso').val();
       $(document).ready(function(){
+        $('.nyroModal').nyroModal();
         $("#formID").validationEngine({
           ajaxFormValidation: true,
           onBeforeAjaxFormValidation:waitResponse,

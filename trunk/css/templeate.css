@@ -36,6 +36,8 @@ body{
 }
 .cornice{
   z-index:10;
+  width:900px;
+  height:24px;
 }
 .input_text {
   background: none repeat scroll 0 0 transparent;
@@ -94,4 +96,221 @@ input.testo_input {
   font-family:Verdana;
   font-weight:bold;
   font-size:13px;
+}
+#cornice_up{
+  background-image:url('../img/cornice_up_2.png');
+}
+#cornice_center{
+  height:569px;
+  background-image:url('../img/cornice_center_2.png');
+  background-repeat:repeat-y;
+}
+#cornice_bottom{
+  background-image:url('../img/cornice_bottom_2.png');
+}
+#logo_header{
+  z-index:-1;
+  width:445px;
+  height:182px;
+  background-image:url('../img/bg_header.png');
+  position:absolute;
+  left:438px;
+  top:14px;
+}
+#navigation_menu{
+  -webkit-border-radius: 20px 0px 0px 20px;
+  -moz-border-radius: 20px 0px 0px 20px;
+  border-radius: 20px 0px 0px 20px;
+  background-color:#0b1a5d;
+  position:absolute;
+  top:195px;
+  left:513px;
+  height:25px;
+  width:370px;
+  color:white;
+  font-family:verdana;
+  font-size:11pt;
+  line-height:22px;
+  text-align:center;
+}
+#navigation_menu a{
+  text-decoration:none;
+}
+#navigation_menu a:link{
+  color:white;
+}
+#navigation_menu a:visited{
+  color:white;
+}
+#navigation_menu a:hover{
+  color:white;
+  text-decoration:underline;
+}
+#text_header{
+  position:absolute;
+  top:16px;
+  left:445px;
+  color:white;
+  width:435px;
+}
+#text_header .titolo_sito{
+  font-family: 'Waiting for the Sunrise', arial, serif;
+}
+#titolo_pagina_corrente{
+  color:#003366;
+  font-family: 'Reenie Beanie', arial, serif;
+  font-size:30pt;
+  position:absolute;
+  top:230px; left:560px;
+}
+#titolo_principale{
+  height:43px;
+  font-size:23pt;
+  margin-left:40px
+}
+#titolo_secondario{
+ position:absolute;
+  top:14px;
+  left:275px;
+  font-size:19px;
+}
+#text_header .descrizione{
+  margin-top:10px;
+  font-family: 'Abel', sans-serif;
+  font-size:17px;
+}
+#bg_contenuto{
+  width:293px;
+  height:456px;
+  background-image:url('../img/flower.png');
+  position:absolute;
+  top:120px;
+  left:589px;
+  z-index:-2;
+  opacity:0.7
+}
+#foto_centrali{
+  z-index:2;
+  width:172px;
+  height:340px;
+  background-image:url('../img/foto_centrali.png');
+  position:absolute;
+  top:215px;
+  left:355px;
+}
+#credits_bar{
+  background-color: #040A25;
+  border:2px solid white;
+  border-top-left-radius: 50px;
+  font-family: Verdana;
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: bold;
+  color: white;
+  text-align: right;
+  line-height:15px;
+  width: 490px;
+  height: 40px;
+  position: absolute;
+  left: 391px;
+  top: 573px;
+  z-index: -1;
+  padding-top:5px;
+}
+#credits_bar .text{
+  margin-right:7px;
+}
+#content_categorie_prodotti{
+  position: absolute;
+  top: 275px;
+  left: 525px;
+  width: 350px;
+  height: 280px;
+  margin-top:10px;
+}
+.categoria_prodotto{
+  margin:5px;
+  cursor:pointer;
+  height:85px;
+}
+.thumbnail_categoria{
+  width:75px;
+  height:75px;
+  margin:5px;
+  opacity:0.2;
+}
+.testo_associato{
+  position:relative;
+  top:-84px;
+  left:85px;
+  width:250px;
+  font-family:Verdana;
+}
+.nome_categoria{
+  font-size:14px;
+  font-weight:bold;
+}
+.descrizione_categoria{
+  font-size:11px;
+}
+#box_info_contatti{
+  width:318px;
+  height:196px;
+  background:url('../img/bg_box_contatti.png');
+  margin-left:4px;
+  text-align:left;
+}
+.contatto{
+  line-height:16px;
+  font-family:Verdana;
+  font-size:20px;
+  color:white;
+  position:relative;
+  top:40px;
+  left:73px;
+  width:245px;
+  margin-bottom:16px;
+}
+.categoria_contatto{
+  font-size:12px;
+}
+.info{
+  margin-left:10px;
+}
+#content_form{
+  width:390px;
+  padding-left:10px;
+  padding-top:10px;
+  padding-bottom:10px;
+  background-color:white;
+  filter:alpha(opacity=90);
+  opacity:0.9;
+  position:absolute;
+  top:70px;
+  left:30px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 1px 7px 2px ;
+  -moz-box-shadow: 0px 1px 7px 2px ;
+  box-shadow: 0px 1px 7px 2px;
+  font-family:Verdana;
+  font-size:10pt;
+}
+.incavatura {
+  width:130px;
+  position:absolute;
+  left:18px;
+  z-index:11;
+  display:none;
+}
+#incavatura_up{
+  background:url('../img/bg_slider_albums_up.png');
+  height:97px;
+  top:46px;
+}
+#incavatura_down{
+  background:url('../img/bg_slider_albumdown.png');
+  height:83px;
+  top:501px;
 }
