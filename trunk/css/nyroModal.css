@@ -36,8 +36,8 @@
   z-index:5001;
 }
 .nyroModalCont iframe {
-	width: 800px;
-	height: 560px;
+	width: 725px;
+	height: 590px;
   border:none;
 }
 .nyroModalError {

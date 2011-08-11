@@ -69,7 +69,10 @@ mysql_close($connessione);
         $('.news_slider-left').hide();
         id_set = $(this).attr('id');
         $.getJSON('crea_albums.php', {id_photoset: id_set}, function(data){
-          num_sets = data.length;
+          if ( data.length > 0 )
+            num_sets = data.length;
+          else
+            num_sets = 0;
           num_set_into_li = 3;
           if (num_sets <4)
             num_li = 1;
@@ -99,7 +102,7 @@ mysql_close($connessione);
                         "<div class='bg_set' id='"+id_photoset+"'></div>"+
                         "<div class='thumbnail_content'>"+
                           "<div class='gallery clearfix'  id='"+id_photoset+"'>"+
-                            "<img class='thumbnail' id='"+id_photoset+"' src='"+url_photo+"' />"+
+                            "<div style='background:url("+url_photo+")' class='thumbnail' id='"+id_photoset+"'></div>"+
                           "</div>"+
                         "</div>"+
                         "<div class='nome_album' id='"+id_photoset+"'>"+
@@ -122,9 +125,9 @@ mysql_close($connessione);
       $('a.link_nome_album').live("mouseover", function(){
         $('.nyroModal').nyroModal();
         id = id = $(this).attr('id');
-        $('#'+id+' img.thumbnail').animate({opacity:'1'}, 500);
+        $('#'+id+' div.thumbnail').animate({opacity:'1'}, 500);
       }).live("mouseleave", function(){
-          $('#'+id+' img.thumbnail').animate({opacity:'0.2'}, 300);
+          $('#'+id+' div.thumbnail').animate({opacity:'0.2'}, 300);
       });
       $('.categoria_prodotto').mouseover(function(){
         id = $(this).attr('id');

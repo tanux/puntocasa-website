@@ -5,7 +5,6 @@ require_once 'inc.php/titolo_sito.inc.php';
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <link rel="stylesheet" href="form_validator/css/validationEngine.jquery.css" type="text/css"/>
         <link rel="stylesheet" href="css/nyroModal.css" type="text/css" media="screen" />
         <title>Contatti | <?php echo $titolo_sito ?></title>
         <meta name="description" content="Informazioni per contattare Punto Casa Tendaggi di Umberto Speranza" />
@@ -45,6 +44,9 @@ require_once 'inc.php/titolo_sito.inc.php';
       </div>
     </div>
     <div id="content_form">
+      <div class="percorso" style="color:#003366; font-family: 'Reenie Beanie', arial, serif; font-size:30pt; width:65%;">
+        Contattaci
+      </div>
       <div>
         <form id="formID" action="form_validator/ajax_submit.php" method="get">
           <div class="div_contatti">Nome e Cognome *</div>

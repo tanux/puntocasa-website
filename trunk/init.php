@@ -19,6 +19,7 @@ if ($d) {
   <link rel="shortcut icon" href="img/favicon.gif" type="image/x-icon"/>
   <link rel="stylesheet" href="css/templeate.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="css/slideshow.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="form_validator/css/validationEngine.jquery.css" type="text/css"/>
   <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise&v2&text=PuntoCasTendgiUmbrtSpz' rel='stylesheet' type='text/css' media="screen">
   <link href='http://fonts.googleapis.com/css?family=Reenie+Beanie&text=HomePagerdtCnDvSRuicMpl' rel='stylesheet' type='text/css' media="screen">
