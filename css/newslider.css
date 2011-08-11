@@ -27,12 +27,15 @@ h2 {font-size:20px; color:#2E2E2E; text-shadow: 1px 1px 0px #fff, 0 0 1px #999; 
   -webkit-border-radius: 40px 5px 40px 5px;
   -moz-border-radius: 40px 5px 40px 5px;
   border-radius: 40px 5px 40px 5px;
-  -webkit-box-shadow: inset 2px 2px 3px 2px ;
-  -moz-box-shadow: inset 2px 2px 3px 2px ;
-  box-shadow: inset 2px 2px 3px 2px;
+  -o-border-radius: 40px 5px 40px 5px;
   margin-bottom:15px;
 	margin-right:8px;
 	background:#fff;
+  -o-box-shadow: inset 2px 2px 3px 2px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: inset 2px 2px 3px 2px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: inset 2px 2px 3px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 2px 2px 3px 2px rgba(0, 0, 0, 0.4);
+
 }
 #news_block .last {
 	margin-right:0;

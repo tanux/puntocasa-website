@@ -5,7 +5,6 @@ require_once 'inc.php/titolo_sito.inc.php';
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <link rel="stylesheet" href="form_validator/css/validationEngine.jquery.css" type="text/css"/>
   <link href='http://fonts.googleapis.com/css?family=Swanky+and+Moo+Moo' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=The+Girl+Next+Door' rel='stylesheet' type='text/css'>
   <link rel='stylesheet' href='css/print.css' type='text/css' media="print">
@@ -32,7 +31,7 @@ require_once 'inc.php/titolo_sito.inc.php';
       </span>
     </div>
   </div>
-  <div id="content_form">
+  <div id="content_form" style="height:375px">
     <div class="percorso" style="color:#003366; font-family: 'Reenie Beanie', arial, serif; font-size:30pt; width:65%;">
       Come raggiungerci
     </div>

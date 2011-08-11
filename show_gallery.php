@@ -45,7 +45,7 @@ $nome_photoset = $_GET['nome_photoset'];
           Galleria.loadTheme('js/galleria.classic.min.js');
           $('#galleria').galleria({
             width:700,
-            height:530,
+            height:560,
             dataSource:dati,
             lightbox: true
           });
