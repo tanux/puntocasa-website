@@ -6,6 +6,7 @@ require_once 'inc.php/titolo_sito.inc.php';
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <link rel="stylesheet" href="css/nyroModal.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="form_validator/css/validationEngine.jquery.css" type="text/css" media="screen" />
         <title>Contatti | <?php echo $titolo_sito ?></title>
         <meta name="description" content="Informazioni per contattare Punto Casa Tendaggi di Umberto Speranza" />
         <style type="text/css">
@@ -26,8 +27,14 @@ require_once 'inc.php/titolo_sito.inc.php';
           }
         </style>
 <?php   require_once 'init.php'; ?>
-    <div id="titolo_pagina_corrente">Contatti</div>
+    <div id="titolo_pagina_corrente">Info e Contatti</div>
     <div id="contenuto">
+      <div id="box_info">
+        Orari di Apertura:<br />
+         - Mattina: <span class="orario">9.00 - 12.50</span><br />
+         - Pomeriggio: <span class="orario">16.30 - 20.30</span>
+        <div style="text-decoration:underline">Sabato pomeriggio chiusi.</div>
+      </div>
       <div id="box_info_contatti">
         <div id="tel_fax" class="contatto">
           <div class="categoria_contatto">Telefono e Fax</div>
