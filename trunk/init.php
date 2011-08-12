@@ -19,10 +19,9 @@ if ($d) {
   <link rel="shortcut icon" href="img/favicon.gif" type="image/x-icon"/>
   <link rel="stylesheet" href="css/templeate.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="css/slideshow.css" type="text/css" media="screen" />
-  <link rel="stylesheet" href="form_validator/css/validationEngine.jquery.css" type="text/css"/>
   <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise&v2&text=PuntoCasTendgiUmbrtSpz' rel='stylesheet' type='text/css' media="screen">
-  <link href='http://fonts.googleapis.com/css?family=Reenie+Beanie&text=HomePagerdtCnDvSRuicMpl' rel='stylesheet' type='text/css' media="screen">
+  <link href='http://fonts.googleapis.com/css?family=Reenie+Beanie&text=HomePagerdtCnDvSRuicMplIf' rel='stylesheet' type='text/css' media="screen">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.15/jquery-ui.min.js" type="text/javascript"></script>
   <script src="js/slideshow_function.js"></script>
@@ -52,7 +51,7 @@ if ($d) {
     <div id="navigation_menu">
       <a href="index.php">Home Page</a> |
       <a href="prodotti.php">Prodotti</a> |
-      <a href="contatti.php">Contatti</a> |
+      <a href="contatti.php">Info&Contatti</a> |
       <a href="dove_siamo.php">Dove Siamo</a>
     </div>
     <div id="text_header">
@@ -65,5 +64,5 @@ if ($d) {
     <div id="foto_centrali"></div>
     <div id="credits_bar">
       <span class="text" style="margin-top:5px;">Punto Casa Tendaggi di Umberto Speranza</span><br />
-      <span class="text">Via Roma, 53 - Nocera Inferiore (SA) - P.IVA:555666333</span>
+      <span class="text">Via Roma, 53 - Nocera Inferiore (SA) - P.IVA:02425170657</span>
     </div>

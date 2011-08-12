@@ -9,6 +9,7 @@ require_once 'inc.php/titolo_sito.inc.php';
   <link href='http://fonts.googleapis.com/css?family=The+Girl+Next+Door' rel='stylesheet' type='text/css'>
   <link rel='stylesheet' href='css/print.css' type='text/css' media="print">
   <link rel="stylesheet" href="css/nyroModal.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="form_validator/css/validationEngine.jquery.css" type="text/css" media="screen" />
   <title>Dove Siamo | <?php echo $titolo_sito ?></title>
   <meta name="description" content="Pagina Dove Siamo per Punto Casa Tendaggi" />
   <style type="text/css">
