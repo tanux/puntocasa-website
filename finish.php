@@ -30,18 +30,6 @@
                   </tr>
                 </table>
               </div>
-              <div class="boxContattiArrow" style="margin: -2px 0 0 80px;">
-                <div class="linea10"></div>
-                <div class="linea9"></div>
-                <div class="linea8"></div>
-                <div class="linea7"></div>
-                <div class="linea6"></div>
-                <div class="linea5"></div>
-                <div class="linea4"></div>
-                <div class="linea3"></div>
-                <div class="linea2"></div>
-                <div class="linea1"></div>
-              </div>
             </div>
             <div id="gaetano_esposito_contatti" class="boxContatti" style="top:555px; left:730px; display:none;">
               <div class="boxContattiContent link_contatti_personali">
@@ -56,18 +44,6 @@
                     <td><a href="http://twitter.com/finish.php#!/tanux87" onclick="targetBlank(this.href);return false;">Twitter</a></td>
                   </tr>
                 </table>
-              </div>
-              <div class="boxContattiArrow" style="margin: -2px 0 0 80px;">
-                <div class="linea10"></div>
-                <div class="linea9"></div>
-                <div class="linea8"></div>
-                <div class="linea7"></div>
-                <div class="linea6"></div>
-                <div class="linea5"></div>
-                <div class="linea4"></div>
-                <div class="linea3"></div>
-                <div class="linea2"></div>
-                <div class="linea1"></div>
               </div>
             </div>
         </div> <!-- chiude content_all-->
