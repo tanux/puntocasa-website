@@ -23,7 +23,7 @@ require_once 'inc.php/titolo_sito.inc.php';
     <li><a href="prodotti.php">Prodotti</a></li>
     <li><a href="contatti.php">Contatti</a></li>
     <li><a href="dove_siamo.php">Dove Siamo</a></li>
-    <li><a href="note_legali.php">Note Legali</a></li>
+    <li><a href="inc.php/note_legali.inc.php">Note Legali</a></li>
   </ul>
   </div>
 <?php   require_once 'finish.php'; ?>
