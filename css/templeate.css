@@ -106,7 +106,8 @@ input.testo_input {
 }
 #cornice_up{
   background-image:url('../img/cornice_top_bottom.png');
-  background-position: 0px 0px;
+  background-position: 0px 1px;
+  background-repeat:no-repeat;
 }
 #cornice_center{
   height:569px;
@@ -115,7 +116,8 @@ input.testo_input {
 }
 #cornice_bottom{
   background-image:url('../img/cornice_top_bottom.png');
-  background-position: 0px -34px;
+  background-position: 0px -35px;
+  background-repeat:no-repeat;
 }
 #logo_header{
   z-index:-1;
@@ -132,10 +134,10 @@ input.testo_input {
   border-radius: 20px 0px 0px 20px;
   background-color:#0b1a5d;
   position:absolute;
-  top:195px;
-  left:513px;
+  top:200px;
+  left:488px;
   height:25px;
-  width:370px;
+  width:395px;
   color:white;
   font-family:verdana;
   font-size:11pt;
@@ -173,14 +175,12 @@ input.testo_input {
   top:230px; left:560px;
 }
 #titolo_principale{
+  width:405px;
   height:43px;
   font-size:23pt;
-  margin-left:40px
+  margin-left:25px
 }
 #titolo_secondario{
- position:absolute;
-  top:14px;
-  left:275px;
   font-size:19px;
 }
 #text_header .descrizione{
@@ -334,4 +334,84 @@ input.testo_input {
 }
 .link_contatti_personali a:visited{
   color:white;
+}
+#box_info{
+  font-size:15px;
+  text-align:left;
+  margin-top:-10px;
+}
+.orario{
+  font-weight:bold;
+}
+
+/*BOX CONTATTI NOSTRI*/
+.boxContatti{
+  cursor:pointer;
+  display:block;
+  left:300px;
+  position:absolute;
+  top:300px;
+  z-index:5000;
+}
+.boxContatti .boxContattiContent{
+  -moz-border-radius:6px;
+  -moz-box-shadow:0 0 6px #000;
+  -webkit-border-radius:6px;
+  -webkit-box-shadow:0 0 6px #000;
+  background:#ee0101;
+  border:2px solid #ddd;
+  border-radius:6px;
+  box-shadow:0 0 6px #000;
+  color:#fff;
+  font-family:tahoma;
+  font-size:11px;
+  padding:4px 10px;
+  position:relative;
+  width:150px;
+  z-index:5001
+}
+.boxContatti .boxContattiArrow{
+  margin:-2px 0 0 13px;
+  position:relative;
+  width:15px;
+  z-index:5006;
+}
+.boxContatti .boxContattiArrow .linea10{
+  border:none;
+  width:15px
+}
+.boxContatti .boxContattiArrow .linea9{
+  border:none;
+  width:13px
+}
+.boxContatti .boxContattiArrow .linea8{
+  width:11px
+}
+.boxContatti .boxContattiArrow .linea7{
+  width:9px
+}
+.boxContatti .boxContattiArrow .linea6{
+  width:7px
+}
+.boxContatti .boxContattiArrow .linea5{
+  width:5px
+}
+.boxContatti .boxContattiArrow .linea4{
+  width:3px
+}
+.boxContatti .boxContattiArrow .linea3{
+  border-bottom:0 solid #ddd;
+  border-left:2px solid #ddd;
+  border-right:2px solid #ddd;
+  width:1px
+}
+.boxContatti .boxContattiArrow .linea2{
+  background:#ddd;
+  border:none;
+  width:3px
+}
+.boxContatti .boxContattiArrow .linea1{
+  background:#ddd;
+  border:none;
+  width:1px
 }
