@@ -74,7 +74,7 @@ require_once 'inc.php/titolo_sito.inc.php';
           </div>
           <div style="width:300px; margin-bottom:10px">
             <input class="validate[required,funcCall[checked]]" type="checkbox" id="consenso" name="consenso" style="display:inline;" />
-            <span>Autorizzo il trattamento dei dati personali secondo il <a href="note_legali.php" class="nyroModal" target="_blank">D.Lgs 196/2003</a></span>
+            <span>Autorizzo il trattamento dei dati personali secondo il <a href="inc.php/note_legali.inc.php" class="nyroModal" target="_blank">D.Lgs 196/2003</a></span>
           </div>
           <input id="invia" class="button" type="submit" value="Invia" />
           <input class="button" type="button" value="Cancella" onclick="reset_field()" />

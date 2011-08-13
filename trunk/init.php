@@ -21,7 +21,7 @@ if ($d) {
   <link rel="stylesheet" href="css/slideshow.css" type="text/css" media="screen" />
   <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise&v2&text=PuntoCasTendgiUmbrtSpz' rel='stylesheet' type='text/css' media="screen">
-  <link href='http://fonts.googleapis.com/css?family=Reenie+Beanie&text=HomePagerdtCnDvSRuicMplIf' rel='stylesheet' type='text/css' media="screen">
+  <link href='http://fonts.googleapis.com/css?family=Reenie+Beanie&text=HomePagerdtCnDvSRuicMplIfNL' rel='stylesheet' type='text/css' media="screen">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.15/jquery-ui.min.js" type="text/javascript"></script>
   <script src="js/slideshow_function.js"></script>
@@ -55,8 +55,10 @@ if ($d) {
       <a href="dove_siamo.php">Dove Siamo</a>
     </div>
     <div id="text_header">
-      <div class="titolo_sito" id="titolo_principale">Punto Casa Tendaggi</div>
-      <span class="titolo_sito" id="titolo_secondario">di Umberto Speranza</span>
+      <div class="titolo_sito" id="titolo_principale">
+        Punto Casa Tendaggi
+        <span class="titolo_sito" id="titolo_secondario">di Umberto Speranza</span>
+      </div>
       <div class="descrizione" style="margin-left:65px">Tende da interno - Tappezzeria - Tende da sole</div>
       <div class="descrizione" style="margin-left:25px;">Zanzariere - Veneziane - Tettoie in legno</div>
     </div>
