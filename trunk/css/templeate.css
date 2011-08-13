@@ -343,8 +343,6 @@ input.testo_input {
 .orario{
   font-weight:bold;
 }
-
-/*BOX CONTATTI NOSTRI*/
 .boxContatti{
   cursor:pointer;
   display:block;
@@ -369,49 +367,4 @@ input.testo_input {
   position:relative;
   width:150px;
   z-index:5001
-}
-.boxContatti .boxContattiArrow{
-  margin:-2px 0 0 13px;
-  position:relative;
-  width:15px;
-  z-index:5006;
-}
-.boxContatti .boxContattiArrow .linea10{
-  border:none;
-  width:15px
-}
-.boxContatti .boxContattiArrow .linea9{
-  border:none;
-  width:13px
-}
-.boxContatti .boxContattiArrow .linea8{
-  width:11px
-}
-.boxContatti .boxContattiArrow .linea7{
-  width:9px
-}
-.boxContatti .boxContattiArrow .linea6{
-  width:7px
-}
-.boxContatti .boxContattiArrow .linea5{
-  width:5px
-}
-.boxContatti .boxContattiArrow .linea4{
-  width:3px
-}
-.boxContatti .boxContattiArrow .linea3{
-  border-bottom:0 solid #ddd;
-  border-left:2px solid #ddd;
-  border-right:2px solid #ddd;
-  width:1px
-}
-.boxContatti .boxContattiArrow .linea2{
-  background:#ddd;
-  border:none;
-  width:3px
-}
-.boxContatti .boxContattiArrow .linea1{
-  background:#ddd;
-  border:none;
-  width:1px
 }
